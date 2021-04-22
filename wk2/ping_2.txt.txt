@@ -1,0 +1,17 @@
+To delete this message of the day: rm -rf /etc/update-motd.d/99-one-click
+Last login: Fri Jan 22 15:19:01 2021 from 99.253.51.59
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# apt-get update
+Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [109 kB]
+Get:2 http://mirrors.digitalocean.com/ubuntu focal InRelease [265 kB]
+Hit:3 http://mirrors.digitalocean.com/ubuntu focal-updates InRelease
+Hit:4 http://mirrors.digitalocean.com/ubuntu focal-backports InRelease
+Fetched 374 kB in 1s (403 kB/s)
+Reading package lists... Done
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# apt-get install apache2-utils
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+apache2-utils is already the newest version (2.4.41-4ubuntu3.1).
+0 upgraded, 0 newly installed, 0 to remove and 100 not upgraded.
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# ping georgebrown.ca
+PING georgebrown.ca (99.79.139.11) 56(84) bytes of data.

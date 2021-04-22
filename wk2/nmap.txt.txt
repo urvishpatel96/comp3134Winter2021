@@ -1,0 +1,64 @@
+
+1.nmap {host_name}
+============================================================
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# nmap georgebrown.ca
+Starting Nmap 7.80 ( https://nmap.org ) at 2021-01-22 16:50 UTC
+Nmap scan report for georgebrown.ca (99.79.139.11)
+Host is up (0.0090s latency).
+rDNS record for 99.79.139.11: ec2-99-79-139-11.ca-central-1.compute.amazonaws.com
+Not shown: 997 filtered ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 15.72 seconds
+
+
+
+2. nmap -p {port_number} {host_name}
+=================================================================
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# nmap -p 443 georgebrown.ca
+Starting Nmap 7.80 ( https://nmap.org ) at 2021-01-22 17:18 UTC
+Nmap scan report for georgebrown.ca (99.79.139.11)
+Host is up (0.0091s latency).
+rDNS record for 99.79.139.11: ec2-99-79-139-11.ca-central-1.compute.amazonaws.com
+
+PORT    STATE SERVICE
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 11.14 seconds
+
+
+
+3.nmap -p {start_port_range}-{end_port_range} {host_name}
+======================================================================
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# nmap -p 22-443 georgebrown.ca
+Starting Nmap 7.80 ( https://nmap.org ) at 2021-01-22 17:26 UTC
+Nmap scan report for georgebrown.ca (99.79.139.11)
+Host is up (0.0088s latency).
+rDNS record for 99.79.139.11: ec2-99-79-139-11.ca-central-1.compute.amazonaws.com
+Not shown: 419 filtered ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 14.15 seconds
+
+
+
+4.nmap -F {host_name}
+=============================================================
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# nmap -F georgebrown.ca
+Starting Nmap 7.80 ( https://nmap.org ) at 2021-01-22 17:27 UTC
+Nmap scan report for georgebrown.ca (99.79.139.11)
+Host is up (0.0089s latency).
+rDNS record for 99.79.139.11: ec2-99-79-139-11.ca-central-1.compute.amazonaws.com
+Not shown: 97 filtered ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 13.34 seconds

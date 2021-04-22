@@ -1,0 +1,10 @@
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# ping georgebrown.ca -w 3
+PING georgebrown.ca (99.79.139.11) 56(84) bytes of data.
+64 bytes from ec2-99-79-139-11.ca-central-1.compute.amazonaws.com (99.79.139.11): icmp_seq=1 ttl=49 time=9.41 ms
+64 bytes from ec2-99-79-139-11.ca-central-1.compute.amazonaws.com (99.79.139.11): icmp_seq=2 ttl=49 time=8.49 ms
+64 bytes from ec2-99-79-139-11.ca-central-1.compute.amazonaws.com (99.79.139.11): icmp_seq=3 ttl=49 time=8.52 ms
+
+--- georgebrown.ca ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2004ms
+rtt min/avg/max/mdev = 8.493/8.807/9.412/0.427 ms
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~#
